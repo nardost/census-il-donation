@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Monoton Regular';
+    src: url('fonts/Monoton-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('fonts/Comfortaa[wght].ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Allura Regular';
+    src: url('fonts/Allura-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MavenPro Regular';
+    src: url('fonts/MavenPro-Regular.ttf') format('truetype');
+}
+body {
+    width: 960;
+}
+#canvas1 {
+    border: 5px solid lightgray;
+    margin: 0;
+}
+#canvas2 {
+    border: 5px solid lightgray;
+    margin: 0;
+}
+#c-2-t, #c-2-t {
+    border-bottom: 2px solid lightgray
+}
+#canvas {
+    position: relative; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 480px; /* Full width (cover the whole page) */
+    height: 480px; /* Full height (cover the whole page) */
+    top: 20; 
+    left: 20;
+    background-color: rgba(255,255,255,1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+.viz-bg-dark {
+    background-color:#2eb8b8;
+    color: #f2f2f2;
+}
+.viz-bg-light {
+    background-color: #f2f2f2;
+    color: rgb(60, 60, 60);/*#2eb8b8;*/
+}
+.header, .footer {
+    color: rgb(60, 60, 60);/*#2eb8b8;*/
+}
+.header {
+    border-bottom: #f2f2f2 8px solid;
+    padding-top: 10px;
+}
+.footer {
+    margin-top: 8px;
+    border-top: #f2f2f2 8px solid;
+    border-bottom: #f2f2f2 8px solid;
+}
+/*.members-footer {
+
+}*/
+.axis text {
+  font: 10px sans-serif;
+  }
+  
+.axis path,
+.axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.x.axis path {
+display: none;
+}
+
+.tooltip {
+position: absolute;
+padding: 10px;
+font: 12px sans-serif;
+background: #222;
+color: #fff;
+border: 0px;
+border-radius: 8px;
+pointer-events: none;
+opacity: 0.9;
+visibility: hidden;
+}
+
+.header-h1 {
+    font-family: 'Monoton Regular';
+}
+.header-h2 {
+    font-family: 'Comfortaa';
+}
+.cursive-1 {
+    font-family: 'Allura Regular';
+}
+.footer-li {
+    font-family: 'MavenPro Regular';
+    font-size: 1.2em;
+}
+
+.viz-bg-dark
+{
+    /*background-color: #91d2be;
+    color: #084081;*/
+    background-color:#084081;
+    color: #91d2be;
+    font-size: 12px;
+}
+.bg-light
+{
+    background-color: #fff0 !important;
+}
+
+
+.navbar{
+    margin: auto;
+  width: 50%;
+}
+
+.navbar-nav
+{
+    margin: auto;
+}
+
+
+.cube {
+    z-index: -111111;
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #74c6ad;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #b5e1d3;
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+              transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+              transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+              transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+              transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  

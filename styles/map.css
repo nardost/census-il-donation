@@ -1,0 +1,9 @@
+.tooltip {
+    background-color: lightgray;
+    padding: 2px;
+}
+path.selected {
+    stroke-width: 3;
+    stroke: white;
+    cursor: pointer;
+}

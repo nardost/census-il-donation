@@ -1,0 +1,30 @@
+const interpolators = [
+    // These are from d3-scale.
+    "Viridis",
+    "Inferno",
+    "Magma",
+    "Plasma",
+    "Warm",
+    "Cool",
+    "Rainbow",
+    "CubehelixDefault",
+    // These are from d3-scale-chromatic
+    "Blues",
+    "Greens",
+    "Greys",
+    "Oranges",
+    "Purples",
+    "Reds",
+    "BuGn",
+    "BuPu",
+    "GnBu",
+    "OrRd",
+    "PuBuGn",
+    "PuBu",
+    "PuRd",
+    "RdPu",
+    "YlGnBu",
+    "YlGn",
+    "YlOrBr",
+    "YlOrRd"
+];

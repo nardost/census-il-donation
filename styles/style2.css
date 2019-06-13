@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Monoton Regular';
+    src: url('fonts/Monoton-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('fonts/Comfortaa[wght].ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Allura Regular';
+    src: url('fonts/Allura-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MavenPro Regular';
+    src: url('fonts/MavenPro-Regular.ttf') format('truetype');
+}
+body {
+    width: 960;
+}
+#canvas1 {
+    border: 5px solid lightgray;
+    margin: 0;
+}
+#canvas2 {
+    border: 5px solid lightgray;
+    margin: 0;
+}
+#c-2-t, #c-2-t {
+    border-bottom: 2px solid lightgray
+}
+#canvas {
+    position: relative; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 480px; /* Full width (cover the whole page) */
+    height: 480px; /* Full height (cover the whole page) */
+    top: 20; 
+    left: 20;
+    background-color: rgba(255,255,255,1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+.viz-bg-dark {
+    background-color:#2eb8b8;
+    color: #f2f2f2;
+}
+.viz-bg-light {
+    background-color: #f2f2f2;
+    color: rgb(60, 60, 60);/*#2eb8b8;*/
+}
+.header, .footer {
+    color: rgb(60, 60, 60);/*#2eb8b8;*/
+}
+.header {
+    border-bottom: #f2f2f2 8px solid;
+    padding-top: 10px;
+}
+.footer {
+    margin-top: 8px;
+    border-top: #f2f2f2 8px solid;
+    border-bottom: #f2f2f2 8px solid;
+}
+/*.members-footer {
+
+}*/
+
+.header-h1 {
+    font-family: 'Monoton Regular';
+}
+.header-h2 {
+    font-family: 'Comfortaa';
+}
+.cursive-1 {
+    font-family: 'Allura Regular';
+}
+.footer-li {
+    font-family: 'MavenPro Regular';
+    font-size: 1.2em;
+}
+
+.viz-bg-dark
+{
+    /*background-color: #91d2be;
+    color: #084081;*/
+    background-color:#084081;
+    color: #91d2be;
+    font-size: 12px;
+}
+.bg-light
+{
+    background-color: #fff !important;
+}
+
+
+.navbar{
+    margin: auto;
+  width: 50%;
+}
+
+.navbar-nav
+{
+    margin: auto;
+}
